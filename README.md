@@ -1,9 +1,9 @@
 # sicer
 
-*How to add new genome to work with sicer in galaxy
+##How to add new genome to work with sicer in galaxy
 
 - make sure you have the genome dbkey of your interest in: /opt/galaxy/tool-data/shared/ucsc/builds.txt 
-- Then, you need to update GenomeData.py in ~/SICER/lib/.  For example, adding PlasmoDB_32_PbergheiANKA_Genome needs:
+- Then, you need to update GenomeData.py in ~/SICER/lib/.  For example, adding PlasmoDB_32_PbergheiANKA_Genome requires:
 
 ```
 PlasmoDB_32_PbergheiANKA_Genome_chroms = ['PbANKA_01_v3', 'PbANKA_02_v3', 'PbANKA_03_v3', 'PbANKA_04_v3',
