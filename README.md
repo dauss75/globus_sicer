@@ -1,6 +1,6 @@
 # How to add new genome to work with sicer in galaxy
 
-- make sure you have the genome dbkey of your interest in: /opt/galaxy/tool-data/shared/ucsc/builds.txt 
+- make sure you add the genome dbkey of your interest in: /opt/galaxy/tool-data/shared/ucsc/builds.txt 
 - Then, you need to update GenomeData.py in ~/SICER/lib/.  For example, adding PlasmoDB_32_PbergheiANKA_Genome requires:
 
 ```
@@ -49,5 +49,5 @@ species_chrom_lengths={'mm8':mm8_chrom_lengths,
                        'background':background_chrom_lengths};
 
 ```
-
-- Now you need to add to python module. Add the files in ./bin to /python/bin and ./sicer to python/lib/
+- You may wonder where you get the chromsome name and length info.  For our case, we have such information in our star index folder.  But there are many other ways that you might find the answer in https://www.biostars.org/.
+- Now you need to add sicer to python module. Add the files (.sh) in ./bin to /python/bin and ./sicer to python/lib/. This also requires __init__.py file which I created only pretty much empty contents such that python scripts can be imported.
