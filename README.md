@@ -49,3 +49,6 @@ species_chrom_lengths={'mm8':mm8_chrom_lengths,
                        'background':background_chrom_lengths};
 
 ```
+
+Now you need to add to python module.
+Add the files in ./bin to /python/bin and ./sicer to python/lib/
